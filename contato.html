@@ -6,106 +6,84 @@
     <meta name="description" content="Projeto Portfólio" />
     <meta name="author" content="Naiara Costa" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <title>Meu Perfil</title>
+    <title>Naiara Costa</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
-    <!-- Cabeçalho da Página (header) -->
-    <header>
-      <!-- Div Conteudo do Cabeçalho -->
-      <div id="header_content">
-        <!-- Titulo do Cabeçalho -->
-        <div id="titulo">
-          <!-- Seu nome -->
-          <h1>Naiara Costa</h1>
-        </div>
-
-        <!-- Conteudo do Menu da Página (header) -->
-        <div id="menu">
-          <!-- Menu da Página -->
-          <nav>
-            <!-- Marcadores não ordenados + links -->
-            <ul id="menu">
-              <li>
-                <a href="index.html"> Home </a>
-              </li>
-              <li>
-                <a href="contato.html"> Contato </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+    <header class="header">
+      <div class="container flex">
+        <img src="./assets/img/LogoSite.png" alt="Logo Naiara Costa">
+        <nav class="header__nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="index.html" class="menu__link">Início</a>
+            </li>
+            <li class="menu__item">
+              <a href="portfolio.html" class="menu__link">Portfólio</a>
+            </li>
+            <li class="menu__item">
+              <a href="contato.html" class="menu__link">Contato</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-    <!-- Seção Principal da Página (main) -->
     <main>
-      <!-- Seção Formulário de Contato e Redes Sociais -->
       <section id="contact">
-        <!-- Seção do Formulário-->
-        <form action="#" method="submit" id="formulario">
-          <label for="nome">Nome: </label>
-          <input
-            id="name"
-            type="text"
-            name="name"
-            placeholder="Digite seu nome"
-            required
-          />
-          <span id="txtNome"></span>
+        <h2>Entre em Contato</h2>
+        <form action="#" method="post" id="contact-form">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input id="name" type="text" name="name" placeholder="Digite seu nome" required />
+          </div>
 
-          <label for="email">Email: </label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Digite seu email"
-            required
-          />
-          <span id="txtEmail"></span>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="Digite seu email" required />
+          </div>
 
-          <label for="subject">Assunto: </label>
-          <input
-            id="subject"
-            type="text"
-            name="subject"
-            placeholder="Digite o título da mensagem"
-            required
-          />
-          <span id="txtSubject"></span>
+          <div class="form-group">
+            <label for="subject">Assunto:</label>
+            <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required />
+          </div>
 
-          <label for="message">Mensagem: </label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Digite sua mensagem"
-            required
-          >
-          </textarea>
+          <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+          </div>
 
           <button type="submit">Enviar</button>
         </form>
 
-        <!-- Seção do Google Maps -->
-        <article id="mapa"></article>
+        <div id="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14618.438593672261!2d-46.6694667322872!3d-23.65414660479788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5abd1c9c3ff5%3A0xb64ad2f9fa54c2ea!2sZona%20Sul%20de%20S%C3%A3o%20Paulo%20-%20Vila%20Santa%20Catarina%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004379-060!5e0!3m2!1spt-BR!2sbr!4v1736388805734!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </section>
     </main>
 
-    <!-- Rodapé da Página (footer) -->
-    <footer>
-      <!-- Seção de Contato - Redes Sociais -->
-      <section id="redes_sociais">
-        <a href="https://www.linkedin.com/in/naiara-paula-costa/">
-          <img src="assets/img/linkedin.svg" alt="LinkedIn" />
-        </a>
-        <a href="https://github.com/devnaiara/">
-          <img src="assets/img/github.svg" alt="Github" />
-        </a>
-        <a href="https://www.instagram.com/bomdianaiara/">
-          <img src="assets/img/instagram.svg" alt="Instagram" />
-        </a>
-      </section>
-
-      <h3>Feito com 🧡 por Naiara Costa - 2025</h3>
+    <footer class="footer">
+      <div class="container flex">
+        <section class="social-links">
+          <a target="_blank" href="https://www.linkedin.com/in/naiara-paula-costa/" class="social-links__icon">
+            <i class='bx bxl-linkedin' ></i>
+          </a>
+          <a target="_blank" href="https://www.github.com/devnaiara/" class="social-links__icon">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/bomdianaiara/" class="social-links__icon">
+            <i class='bx bxl-instagram' ></i>
+          </a>
+        </section>
+        <p>© 2025 Naiara Costa. Todos os direitos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>
