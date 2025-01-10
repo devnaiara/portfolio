@@ -5,9 +5,9 @@
 }
 
 body {
+  background-color: #f0f0f0a(247, 60%, 97%);
   font-family: "Gill Sans", sans-serif;
   color: #333;
-  background-color: #fcfbe2;
 }
 
 .container {
@@ -89,7 +89,7 @@ body {
 }
 
 .about {
-  background-color: var(--secondary-color);
+
   padding: 50px 0;
   margin-top: 65px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.458);
@@ -144,7 +144,6 @@ main {
   font-family: "Gill Sans", sans-serif;
   text-align: justify;
 }
-
 .favorite-music {
   background-color: #f2dc99;
   padding: 60px 0;
@@ -159,7 +158,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
   width: 100%;
   background-color: #f2dc99;
 }
