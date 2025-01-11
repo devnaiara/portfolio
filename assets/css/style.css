@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-  background-color: #f0f0f0a(247, 60%, 97%);
+  background-color: #f8f9fa;
   font-family: "Gill Sans", sans-serif;
   color: #333;
 }
@@ -50,6 +51,7 @@ body {
   left: 0;
   width: 100%;
   border-bottom: 3px solid #2e4559;
+  z-index: 999;
 }
 
 .header__title {
@@ -70,6 +72,15 @@ body {
 
 .menu__item {
   margin-left: 20px;
+  transition: transform 0.5s;
+}
+
+.menu__item:hover {
+  transform: translateY(-3px);
+} 
+
+ul {
+  height: 100%;
 }
 
 .menu__link {
@@ -89,12 +100,12 @@ body {
 }
 
 .about {
-
   padding: 50px 0;
   margin-top: 65px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.458);
   width: 75%;
   border-radius: 20px;
+  background-color: rgb(255, 255, 255);
 }
 
 .section-title {
@@ -292,6 +303,172 @@ button:hover {
   animation: typing 1.5s steps(30, end) forwards, blink 0.05s step-end 5000;
 }
 
+.curriculo {
+  margin-top: 50px;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  z-index: 1;
+}
+
+.curriculo .section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza as caixas */
+  gap: 20px;
+  max-width: 800px; /* Define a largura máxima */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+}
+
+.box {
+  width: 100%; /* Faz com que as caixas se ajustem ao tamanho do contêiner */
+  background-color: #ffffff;
+  border: 2px solid #fed36a;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: justify;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2e4559;
+}
+
+.box p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+#portfolio {
+  padding-top: 100px; /* Ajusta o espaço para descer o conteúdo */
+  padding-bottom: 50px;
+}
+
+.portfolio-page {
+  background-color: rgba(199, 191, 191, 0.1);
+}
+
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact {
+  padding: 60px 0;
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-box {
+  width: 100%;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 2px solid #fed36a;  /* Borda amarela */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--highlight-color);
+  outline: none;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button {
+  display: block;
+  width: 25%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  transition: transform 0.5s;
+  margin: 0 auto;
+}
+
+.contato-button-grid {
+  display: flex;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #f2d091;
+  color: #333;
+  transform: translateY(-5px);
+  font-weight: bold !important;
+}
+
+#mapa {
+  margin-top: 40px;
+  height: 280px;
+}
+
+
+
 @keyframes typing {
   from {
     width: 0;
@@ -318,3 +495,25 @@ button:hover {
     border-color: #333;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+}
+  @media (max-width: 480px) {
+    .menu__link {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  
+    .header {
+      padding: 8px 0;
+    }
+  
+    img {
+      width: 80px;
+    }
+  }

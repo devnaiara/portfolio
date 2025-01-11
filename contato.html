@@ -32,7 +32,7 @@
           </li>
           <li class="menu__item">
             <a href="curriculo.html" class="menu__link">
-              <i class="bx bxs-envelope"></i> Currículo</a>
+              <i class="bx bxs-contact"></i> Currículo</a>
           </li>
           <li class="menu__item">
             <a href="portfolio.html" class="menu__link">
@@ -41,7 +41,7 @@
           </li>
           <li class="menu__item">
             <a href="contato.html" class="menu__link">
-              <i class="bx bxs-contact"></i> Contato</a>
+              <i class="bx bxs-envelope"></i> Contato</a>
           </li>
         </ul>
       </nav>
@@ -50,30 +50,32 @@
   <main>
     <section id="contact">
       <h2>Entre em Contato</h2>
-      <form action="#" method="post" id="contact-form">
-        <div class="form-group">
-          <label for="name">Nome:</label>
-          <input id="name" type="text" name="name" placeholder="Digite seu nome" required />
-          <div id="txtNome" class="error-message"></div>
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input id="email" type="email" name="email" placeholder="Digite seu email" required />
-          <div id="txtEmail" class="error-message"></div>
-        </div>
-        <div class="form-group">
-          <label for="subject">Assunto:</label>
-          <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required />
-          <div id="txtSubject" class="error-message"></div>
-        </div>
-        <div class="form-group">
-          <label for="message">Mensagem:</label>
-          <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
-        </div>
-        <div class="contato-button-grid">
-          <button type="submit">Enviar</button>
-        </div>
-      </form>
+      <div class="form-box">
+        <form action="#" method="post" id="contact-form">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input id="name" type="text" name="name" placeholder="Digite seu nome" required />
+            <div id="txtNome" class="error-message"></div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="Digite seu email" required />
+            <div id="txtEmail" class="error-message"></div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto:</label>
+            <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required />
+            <div id="txtSubject" class="error-message"></div>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+          </div>
+          <div class="contato-button-grid">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
       <div id="mapa">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14618.438593672261!2d-46.6694667322872!3d-23.65414660479788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5abd1c9c3ff5%3A0xb64ad2f9fa54c2ea!2sZona%20Sul%20de%20S%C3%A3o%20Paulo%20-%20Vila%20Santa%20Catarina%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004379-060!5e0!3m2!1spt-BR!2sbr!4v1736388805734!5m2!1spt-BR!2sbr"
@@ -81,6 +83,7 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
+    
   </main>
   <footer class="footer">
     <div class="container flex">
