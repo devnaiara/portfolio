@@ -6,7 +6,6 @@ html, body {
   margin-top: 0px;
 }
 
-
 :root {
   --primary-color: #FADBA2;
   --secondary-color: #2e4559;
@@ -55,7 +54,7 @@ body {
 
 .header {
   background-color: #FADBA2;
-  padding: 2px;
+  padding: 2px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -71,7 +70,7 @@ body {
 }
 
 .header__nav {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .menu {
@@ -115,6 +114,7 @@ ul {
   width: 75%;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .section-title {
@@ -180,11 +180,11 @@ main {
   align-items: center;
   width: 100%;
   background-color: f3ebde;
-  ;
 }
 
 iframe {
   border-radius: 8px;
+
 }
 
 #contact {
@@ -213,15 +213,15 @@ iframe {
 
 label {
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 5px;
 }
 
 input,
 textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
+  width: 98%;
+  padding: 12px; 
+  font-size: 1.2rem; 
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -342,7 +342,7 @@ button:hover {
 }
 
 .box {
-  width: 100%; /* Faz com que as caixas se ajustem ao tamanho do contêiner */
+  width: 138%; /* Faz com que as caixas se ajustem ao tamanho do contêiner */
   background-color: #ffffff;
   border: 2px solid #fed36a;
   border-radius: 10px;
@@ -364,8 +364,8 @@ button:hover {
 }
 
 .box p {
-  font-size: 1rem;
-  color: #555;
+  font-size: 1.2rem;
+  color: #333;
   line-height: 1.6;
 }
 
@@ -394,14 +394,14 @@ button:hover {
 }
 
 #contact h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 30px;
   text-align: center;
 }
 
 .form-box {
-  width: 100%;
-  padding: 30px;
+  width: 130%;
+  padding: 50px;
   background-color: #ffffff;
   border: 2px solid #fed36a;  /* Borda amarela */
   border-radius: 10px;
@@ -414,20 +414,23 @@ button:hover {
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 label {
   display: block;
-  font-size: 1.1rem;
-  margin-bottom: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left;
 }
 
 input,
 textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
+  width: 98%;
+  padding: 12px;
+  font-size: 1.2rem;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
